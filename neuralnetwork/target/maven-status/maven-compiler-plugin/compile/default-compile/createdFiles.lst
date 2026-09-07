@@ -1,0 +1,12 @@
+com\neuralnetwork\Training.class
+com\neuralnetwork\networkConnection.class
+com\neuralnetwork\MNISTLoader.class
+com\neuralnetwork\MainMenuController.class
+com\neuralnetwork\Gradient.class
+com\neuralnetwork\Database.class
+com\neuralnetwork\CreateNetworkController.class
+com\neuralnetwork\FeedForwardResult.class
+com\neuralnetwork\Main.class
+com\neuralnetwork\meshNetwork.class
+com\neuralnetwork\Network.class
+com\neuralnetwork\sparseNetwork.class

@@ -1,0 +1,11 @@
+.root{
+    -fx-background-color: "orange";
+}
+
+#networkPane{
+    -fx-background-color: #FFD8A8;
+    -fx-border-color: "orange";
+    -fx-border-width: 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 20;
+}

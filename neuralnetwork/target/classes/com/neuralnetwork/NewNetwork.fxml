@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neuralnetwork.CreateNetworkController">
+   <children>
+      <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="32.0" prefHeight="17.0" prefWidth="722.0" text="Create your Neural Network" />
+      <TextField fx:id="nameTextField" layoutX="287.0" layoutY="84.0" />
+      <Label layoutX="228.0" layoutY="88.0" text="Name" />
+      <ChoiceBox fx:id="architectureType" layoutX="286.0" layoutY="135.0" onDragDetected="#getArchitecture" prefWidth="150.0" />
+      <Label layoutX="166.0" layoutY="139.0" text="Architecture Type" />
+      <TextField fx:id="sparsityTextField" layoutX="287.0" layoutY="190.0">
+         <tooltip>
+            <Tooltip text="Choose a value between 1 and 100" />
+         </tooltip></TextField>
+      <Label layoutX="223.0" layoutY="194.0" text="Sparsity" />
+      <TextField fx:id="hiddenTextField" layoutX="287.0" layoutY="246.0">
+         <tooltip>
+            <Tooltip text="Enter the number of neurons in the hidden layer. For multiple hidden layers, seperate the numbers with commas." />
+         </tooltip></TextField>
+      <Label layoutX="190.0" layoutY="250.0" text="Hidden Layers" />
+      <TextField fx:id="loopsTextField" layoutX="288.0" layoutY="301.0">
+         <tooltip>
+            <Tooltip text="The number of times the network will loop through the whole data set." />
+         </tooltip></TextField>
+      <TextField fx:id="learnTextField" layoutX="287.0" layoutY="355.0">
+         <tooltip>
+            <Tooltip text="Sets how fast the network learns from each training step." />
+         </tooltip></TextField>
+      <Label layoutX="225.0" layoutY="305.0" text="Epochs">
+         <tooltip>
+            <Tooltip text="Each epoch is 50,000 images so be careful with this number." />
+         </tooltip></Label>
+      <Label layoutX="192.0" layoutY="359.0" text="Learning Rate" />
+      <Button fx:id="returnButton" layoutX="1.0" layoutY="2.0" mnemonicParsing="false" onAction="#returnToMenu" text="Return" />
+      <Button fx:id="createButton" layoutX="312.0" layoutY="413.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="101.0" text="Create Network" />
+      <Label fx:id="confirmLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="454.0" layoutY="413.0" prefHeight="95.0" prefWidth="240.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neuralnetwork.TutorialController">
+   <children>
+      <Pane fx:id="networkPane" prefHeight="350.0" prefWidth="722.0">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnToMenu" text="Return" />
+         </children>
+      </Pane>
+      <Label fx:id="tutorialText" alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="350.0" prefHeight="148.0" prefWidth="515.0" text="Label" />
+      <Button fx:id="backButton" layoutX="25.0" layoutY="431.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Button fx:id="nextButton" layoutX="647.0" layoutY="431.0" mnemonicParsing="false" onAction="#goNext" text="Next" />
+   </children>
+</AnchorPane>
